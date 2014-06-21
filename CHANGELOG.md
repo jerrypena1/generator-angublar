@@ -1,3 +1,24 @@
+<a name="v0.5.4"></a>
+## v0.5.4 (2014-06-21)
+
+
+#### Bug Fixes
+
+* **app:**
+  * New fork of the project to include Bootstrap LESS, and ngAnimate
+* **build:**
+  *
+* **docs:**
+  *
+* **generator:**
+  *
+* **templates:**
+  *
+* **test:**
+  *
+* **views:**
+  *
+
 <a name="v0.5.0"></a>
 ## v0.5.0 (2013-10-17)
 

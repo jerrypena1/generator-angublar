@@ -30,6 +30,13 @@ module.exports = function (grunt) {
         files: ['<%%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['compass:server', 'autoprefixer']
       },<% } %>
+      less: {
+        files: ['<%%= yeoman.app %>/styles/{,*/}*.less'],
+        tasks: ['less'],
+        options: {
+          nospawn: true
+        }
+      },
       styles: {
         files: ['<%%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['copy:styles', 'autoprefixer']
@@ -161,6 +168,19 @@ module.exports = function (grunt) {
     /*concat: {
       dist: {}
     },*/
+    less: {
+      development: {
+        options: {
+          compress: true,
+          yuicompress: true,
+          optimization: 2
+        },
+        files: {
+          // target.css file: source.less file
+          "css/main.css": "less/main.less"
+        }
+      }
+    },
     rev: {
       dist: {
         files: {
