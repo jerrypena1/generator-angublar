@@ -169,17 +169,16 @@ module.exports = function (grunt) {
       dist: {}
     },*/
     less: {
-      development: {
-        options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
-        },
-        files: {
-          // target.css file: source.less file
-          "css/main.css": "less/main.less"
-        }
+      options: {
+        compress: true,
+        yuicompress: true,
+        optimization: 2
+      },
+      files: {
+        // target.css file: source.less file
+        "css/main.css": "less/main.less"
       }
+
     },
     rev: {
       dist: {
